@@ -1,0 +1,150 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('LoginBG.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 19px;
+  }
+  
+  /* Login Container */
+  .login-container {
+    background: transparent;
+    backdrop-filter: blur(14px);
+    padding: 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 13px white;
+    width: 420px;
+    max-width: 95%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    position: relative;
+  }
+  
+  /* Login Icon */
+  .login-icon {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: -20;
+  }
+  
+  /* Form Title */
+  .login-form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  
+  /* Input Group */
+  .input-group {
+    position: relative;
+    margin-bottom: 35px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+  }
+  
+  .input-group label {
+    position: absolute;
+    left: 45px;
+    bottom: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:valid + label {
+    transform: translateY(-24px);
+    font-size: 14px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    bottom: 14px;
+    color: #ccc;
+    font-size: 18px;
+  }
+  
+  /* Links */
+  .link {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .link a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .link a:hover {
+    color: #84a1f1;
+    text-decoration: underline;
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #84a1f1, #4b6cb7);
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #5f80e3, #2c4cb7);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 480px) {
+    .login-container {
+      padding: 40px 25px;
+    }
+    .login-form h2 {
+      font-size: 28px;
+    }
+  }
+  
